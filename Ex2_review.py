@@ -55,7 +55,8 @@ print("-------------------------------------------\n"
 # Print: "Welcome, <name>!"
 #
 # Write your code below:
-
+name = "    Monica   ".strip()
+print(name)
 
 
 # Step 2:
@@ -66,6 +67,9 @@ print("-------------------------------------------\n"
 # Print: "You are <age> years old — great to have you here!"
 #
 # Write your code below:
+age = int(input("what is your age?"))
+print (f"you are {age} great to have you here")
+
 
 
 
@@ -100,7 +104,8 @@ print("-------------------------------------------\n"
 # Use .lower() on the input and store it in a variable called colour.
 #
 # Write your code below:
-
+colour = input("what is your favourite colour?").lower()
+print(colour)
 
 
 # Step 2:
@@ -113,6 +118,12 @@ print("-------------------------------------------\n"
 #
 # Write your code below:
 
+if colour == "blue":
+    print("cool choice!")
+elif colour =="yellow":
+    print("bright and happy!")
+else:
+    print("that's a unique colour!")
 
 
 # -------------------------------------------
@@ -142,6 +153,7 @@ print("-------------------------------------------\n"
 # Convert it to an integer using int() and store it in a variable.
 #
 # Write your code below:
+number = int(input("Enter the number between 1 and 10\n"))
 
 
 
@@ -153,7 +165,10 @@ print("-------------------------------------------\n"
 # 3 x 1 = 3
 # 3 x 2 = 6
 #
-# Write your code below:
+# Write your code below
+
+for i in range (1,11):
+    print(f"{number}x{i} ={number*i}")
 
 
 
@@ -165,6 +180,12 @@ print("-------------------------------------------\n"
 # Use .lower() to make sure input like "YES" or "Yes" works.
 #
 # Write your code below:
+useranswer = input("Do you want to try another number? Yes or No?").lower().strip()
+while useranswer == "yes":
+    usernumber = int(input("What number do you want to try?"))
+    for i in range (1, 11):
+        print(f"{usernumber} x {i} = {usernumber * i}")
+    useranswer = input("Do you want to try another number? Yes or No?").lower().strip()
 
 
 
