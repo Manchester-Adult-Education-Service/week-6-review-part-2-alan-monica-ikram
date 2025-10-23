@@ -55,7 +55,8 @@ print("-------------------------------------------\n"
 # Print: "Welcome, <name>!"
 #
 # Write your code below:
-
+name = "    Monica   ".strip()
+print(name)
 
 
 # Step 2:
@@ -66,6 +67,9 @@ print("-------------------------------------------\n"
 # Print: "You are <age> years old — great to have you here!"
 #
 # Write your code below:
+age = int(input("what is your age?"))
+print (f"you are {age} great to have you here")
+
 
 
 
